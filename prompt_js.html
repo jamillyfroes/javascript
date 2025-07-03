@@ -6,14 +6,21 @@
     <title>Document</title>
     <script type="text/javascript" src="../js/jquery-3.7.1.min.js"></script>
     <script>
-        function botao1()
-        {
-            alert("Você clicou \no botão 1!");
+        function myFunction(){
+            var x;
+            var idade= prompt("Digite sua idade:");
+            if (idade != null) {
+                x= 'Idade:'+ idade+" anos."
+                document.getElementById("demo").innerHTML = x;
+            }
         }
     </script>
+
 </head>
 <body>
-    <input type="button" value="Botão 1" onclick="botao1()">
+    <p>Clique para exibir</p>
+    <button onclick="myFunction()">Clique aqui</button>
+    <p id="demo"></p>
     <br>
     <address>
         <center>Jamilly Fróes- Estudante- Técnico de Desenvolvimento de Sistemas</center>
